@@ -34,7 +34,7 @@ locals {
     dnsServers             = local.is_not_windows && length(var.dns_servers) > 0 ? var.dns_servers : null
     dockerLabels           = length(var.docker_labels) > 0 ? var.docker_labels : null
     dockerSecurityOptions  = length(var.docker_security_options) > 0 ? var.docker_security_options : null
-    entrypoint             = length(var.entrypoint) > 0 ? var.entrypoint : null
+    entrypoint             = length(var.entry_point) > 0 ? var.entry_point : null
     environment            = var.environment
     environmentFiles       = length(var.environment_files) > 0 ? var.environment_files : null
     essential              = var.essential

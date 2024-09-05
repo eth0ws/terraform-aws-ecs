@@ -65,7 +65,7 @@ variable "enable_execute_command" {
   default     = false
 }
 
-variable "entrypoint" {
+variable "entry_point" {
   description = "The entry point that is passed to the container"
   type        = list(string)
   default     = []

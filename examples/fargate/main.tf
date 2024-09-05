@@ -210,8 +210,8 @@ module "ecs_task_definition" {
         }
       ]
 
-      command    = ["echo hello world"]
-      entrypoint = ["/usr/bin/sh", "-c"]
+      command     = ["echo hello world"]
+      entry_point = ["/usr/bin/sh", "-c"]
     }
   }
 
